@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+
+.opidStyle {
+  text-align: center;
+  background-image: linear-gradient(to right top, #231123, #3e324b, #565877, #6d81a3, #84acce);
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%23FFFFFF' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E"),
+                   linear-gradient(to right top, #231123, #3e324b, #565877, #6d81a3, #84acce);
+}
+
+.flyidStyle {
+    text-align: center;
+    background-image: linear-gradient(to right top, #84acce, #7cbdcc, #8dcac0, #b0d3b4, #d7d9b1);
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E"),
+                      linear-gradient(to right top, #84acce, #7cbdcc, #8dcac0, #b0d3b4, #d7d9b1);
+    
+  }
+
+  .pfcoidStyle {
+    text-align: center;
+    background-image: linear-gradient(to right top, #82204a, #a34f4d, #b87e5d, #c7ac80, #d7d9b1);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23FFFFFF' fill-opacity='0.05' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+                      linear-gradient(to right top, #82204a, #a34f4d, #b87e5d, #c7ac80, #d7d9b1);
+    
+
+  }
+
+  .rpidStyle {
+    text-align: center;
+    background-image: linear-gradient(to right top, #82204a, #a34f4d, #b87e5d, #c7ac80, #d7d9b1);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+                      linear-gradient(to right top, #231123, #5a3740, #8d665c, #b79d7f, #d7d9b1);
+    
+
+  }
+
+.cardHead {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #fff;
+    opacity: 0.8;
+    text-align: left;
+}
+
+.emboss {
+  color: transparent;
+  font-family: Share Tech Mono;
+  text-shadow: -2px -1px 1px rgba(255, 255, 255, 1),
+  1px 1px 1px rgba(0, 0, 0, 1), 1px 0px 1px rgba(255, 255, 255, 0.2),
+  -1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+}
+
+.name {
+  font-size: 1.5rem;
+  
+  text-shadow: -2px -1px 1px rgba(255, 255, 255, 1),
+    1px 1px 1px rgba(0, 0, 0, 1), 1px 0px 1px rgba(255, 255, 255, 0.2),
+    -1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: left;
+  
+}
+
+.small-type {
+  /* font-family: sans-serif; */
+  text-transform: uppercase;
+  color: white;
+  /* padding-left: 100px; */
+  line-height: 10px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.exp {
+  font-size: 1.5rem;
+  /* padding-left: 100px; */
+  text-shadow: -2px -1px 1px rgba(255, 255, 255, 1),
+    1px 1px 1px rgba(0, 0, 0, 1), 1px 0px 1px rgba(255, 255, 255, 0.2),
+    -1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.number {
+    display: inline-block;    
+      font-size: 2rem;
+      padding-bottom: 20px;
+    position: relative;
+    z-index: 999;
+    text-shadow: -2px -1px 1px rgba(255, 255, 255, 1),
+    1px 1px 1px rgba(0, 0, 0, 1), 1px 0px 1px rgba(255, 255, 255, 0.2),
+    -1px -1px 1px rgba(0, 0, 0, 1), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  }
+
+

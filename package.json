@@ -1,0 +1,79 @@
+{
+  "name": "com.imagisoft.dronedeck",
+  "displayName": "DroneDeck",
+  "version": "1.0.0",
+  "description": "DroneDeck ID System",
+  "main": "index.js",
+  "author": "ImagiSoft",
+  "license": "Apache-2.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~8.2.11",
+    "@angular/common": "~8.2.11",
+    "@angular/compiler": "~8.2.11",
+    "@angular/core": "~8.2.11",
+    "@angular/forms": "~8.2.11",
+    "@angular/platform-browser": "~8.2.11",
+    "@angular/platform-browser-dynamic": "~8.2.11",
+    "@angular/router": "~8.2.11",
+    "anypicker": "^2.0.9",
+    "compression": "^1.7.4",
+    "cordova-android": "^8.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-admobpro": "^2.49.0",
+    "cordova-plugin-badge": "^0.8.8",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-extension": "1.5.4",
+    "cordova-plugin-local-notification": "^0.9.0-beta.2",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "ngx-onsenui": "^7.0.0",
+    "onsenui": "^2.10.10",
+    "rxjs": "~6.4.0",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.9.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.803.10",
+    "@angular/cli": "~8.3.10",
+    "@angular/compiler-cli": "~8.2.11",
+    "@angular/language-service": "~8.2.11",
+    "@types/node": "~8.9.4",
+    "@types/jasmine": "~3.3.8",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "^5.0.0",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.15.0",
+    "typescript": "~3.5.3",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-local-notification": {}
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  }
+}
