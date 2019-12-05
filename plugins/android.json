@@ -7,23 +7,18 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.imagisoft.dronedeck"
-    },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.imagisoft.dronedeck"
     },
-    "cordova-plugin-admobpro": {
-      "ADMOB_APP_ID": "ca-app-pub-9809082392221322/3310838638",
-      "PLAY_SERVICES_VERSION": "16.0.0",
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.imagisoft.dronedeck"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-device": {
+    "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.imagisoft.dronedeck"
     },
-    "cordova-plugin-badge": {
+    "cordova-plugin-device": {
       "PACKAGE_NAME": "com.imagisoft.dronedeck"
     },
     "cordova-plugin-extension": {

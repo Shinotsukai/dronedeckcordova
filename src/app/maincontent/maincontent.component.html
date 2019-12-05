@@ -1,181 +1,171 @@
 <ons-page>
-<ons-toolbar>
+  <ons-toolbar>
     <div class="center">
-        DroneDeck
+      DroneDeck
     </div>
     <div class="right">
-        <ons-toolbar-button icon="md-settings" style="color: #fff;" (click)="onSettingsClick()"></ons-toolbar-button>
+      <ons-toolbar-button
+        icon="md-settings"
+        style="color: #fff;"
+        (click)="onSettingsClick()"
+      ></ons-toolbar-button>
     </div>
-</ons-toolbar>
+  </ons-toolbar>
 
-<div class="content">
-
+  <div class="content">
     <!--Operator Card-->
-    <ons-card class="opidStyle"  *ngIf="storage.operator.opID">
-        <ons-row class="cardHead">
-            <ons-col>
-                Operator ID
-            </ons-col>
-        </ons-row>
+    <ons-card class="opidStyle" *ngIf="storage.operator.opID">
+      <ons-row class="cardHead">
+        <ons-col>
+          Operator ID
+        </ons-col>
+      </ons-row>
 
-        <ons-row>
-                <ons-col>
-                    <div class="emboss number">{{storage?.operator?.opID}}</div>
-                </ons-col>
-        </ons-row>
-        <ons-row class="small-type">
-            <ons-col>
-                    Valid From
-            </ons-col>
-            <ons-col>
-                    UNTIL END
-            </ons-col>
-        </ons-row>
+      <ons-row>
+        <ons-col>
+          <div class="emboss number">{{ storage?.operator?.opID }}</div>
+        </ons-col>
+      </ons-row>
+      <ons-row class="small-type">
+        <ons-col>
+          Valid From
+        </ons-col>
+        <ons-col>
+          UNTIL END
+        </ons-col>
+      </ons-row>
 
-        <ons-row class="emboss exp">
-                <ons-col>
-                        {{storage?.operator?.startDate | date:'dd/MM/yy'}}
-                </ons-col>
-                <ons-col>
-                        {{storage?.operator?.expDate | date:'dd/MM/yy'}}
-                </ons-col>
-        </ons-row>
-                    
-                    <ons-row  class="emboss name">
-                        <ons-col>
-                                {{storage?.operator?.name}}
-                        </ons-col>
-                    </ons-row>
-                    
+      <ons-row class="emboss exp">
+        <ons-col>
+          {{ storage?.operator?.startDate | date: "dd/MM/yy" }}
+        </ons-col>
+        <ons-col>
+          {{ storage?.operator?.expDate | date: "dd/MM/yy" }}
+        </ons-col>
+      </ons-row>
 
+      <ons-row class="emboss name">
+        <ons-col>
+          {{ storage?.operator?.name }}
+        </ons-col>
+      </ons-row>
     </ons-card>
 
     <!--Flyer Card-->
 
     <ons-card class="flyidStyle" *ngIf="storage.flyer.flyID">
-            <ons-row class="cardHead">
-                <ons-col>
-                    Flyer ID
-                </ons-col>
-            </ons-row>
-    
-            <ons-row>
-                    <ons-col>
-                        <div class="emboss number">{{storage?.flyer?.flyID}}</div>
-                    </ons-col>
-            </ons-row>
-            <ons-row class="small-type">
-                <ons-col>
-                        Valid From
-                </ons-col>
-                <ons-col>
-                        UNTIL END
-                </ons-col>
-            </ons-row>
-    
-            <ons-row class="emboss exp">
-                    <ons-col>
-                            {{storage?.flyer?.startDate | date:'dd/MM/yy'}}
-                    </ons-col>
-                    <ons-col>
-                            {{storage?.flyer?.expDate | date:'dd/MM/yy'}}
-                    </ons-col>
-            </ons-row>
-                        
-                        <ons-row  class="emboss name">
-                            <ons-col>
-                                    {{storage?.flyer?.name}}
-                            </ons-col>
-                        </ons-row>
-                        
-    
-        </ons-card>
+      <ons-row class="cardHead">
+        <ons-col>
+          Flyer ID
+        </ons-col>
+      </ons-row>
 
-        <!--PFCO-->
-        
-    <ons-card class="pfcoidStyle" *ngIf="storage?.pfco.pfcoID">
-            <ons-row class="cardHead">
-                <ons-col>
-                    PFCO
-                </ons-col>
-            </ons-row>
-    
-            <ons-row>
-                    <ons-col>
-                        <div class="emboss number">{{storage?.pfco?.pfcoID}}</div>
-                    </ons-col>
-            </ons-row>
-            <ons-row class="small-type">
-                <ons-col>
-                        Valid From
-                </ons-col>
-                <ons-col>
-                        UNTIL END
-                </ons-col>
-            </ons-row>
-    
-            <ons-row class="emboss exp">
-                    <ons-col>
-                            {{storage?.pfco?.startDate | date:'dd/MM/yy'}}
-                    </ons-col>
-                    <ons-col>
-                            {{storage?.pfco?.expDate | date:'dd/MM/yy'}}
-                    </ons-col>
-            </ons-row>
-                        
-                        <ons-row  class="emboss name">
-                            <ons-col>
-                                    {{storage?.pfco?.name}}
-                            </ons-col>
-                        </ons-row>
-                        
-    
-        </ons-card>
+      <ons-row>
+        <ons-col>
+          <div class="emboss number">{{ storage?.flyer?.flyID }}</div>
+        </ons-col>
+      </ons-row>
+      <ons-row class="small-type">
+        <ons-col>
+          Valid From
+        </ons-col>
+        <ons-col>
+          UNTIL END
+        </ons-col>
+      </ons-row>
 
-                <!--Remote Pilot-->
-        
-    <ons-card class="rpidStyle" *ngIf="storage?.rp.rpID">
-        <ons-row class="cardHead">
-            <ons-col>
-                Remote Pilot
-            </ons-col>
-        </ons-row>
+      <ons-row class="emboss exp">
+        <ons-col>
+          {{ storage?.flyer?.startDate | date: "dd/MM/yy" }}
+        </ons-col>
+        <ons-col>
+          {{ storage?.flyer?.expDate | date: "dd/MM/yy" }}
+        </ons-col>
+      </ons-row>
 
-        <ons-row>
-                <ons-col>
-                    <div class="emboss number">{{storage?.rp?.rpID}}</div>
-                </ons-col>
-        </ons-row>
-        <ons-row class="small-type">
-            <ons-col>
-                    Valid From
-            </ons-col>
-            <ons-col>
-                    UNTIL END
-            </ons-col>
-        </ons-row>
-
-        <ons-row class="emboss exp">
-                <ons-col>
-                        {{storage?.rp?.startDate | date:'dd/MM/yy'}}
-                </ons-col>
-                <ons-col>
-                        {{storage?.rp?.expDate | date:'dd/MM/yy'}}
-                </ons-col>
-        </ons-row>
-                    
-                    <ons-row  class="emboss name">
-                        <ons-col>
-                                {{storage?.rp?.name}}
-                        </ons-col>
-                    </ons-row>
-                    
-
+      <ons-row class="emboss name">
+        <ons-col>
+          {{ storage?.flyer?.name }}
+        </ons-col>
+      </ons-row>
     </ons-card>
 
+    <!--PFCO-->
 
+    <ons-card class="pfcoidStyle" *ngIf="storage?.pfco.pfcoID">
+      <ons-row class="cardHead">
+        <ons-col>
+          PFCO
+        </ons-col>
+      </ons-row>
 
+      <ons-row>
+        <ons-col>
+          <div class="emboss number">{{ storage?.pfco?.pfcoID }}</div>
+        </ons-col>
+      </ons-row>
+      <ons-row class="small-type">
+        <ons-col>
+          Valid From
+        </ons-col>
+        <ons-col>
+          UNTIL END
+        </ons-col>
+      </ons-row>
 
-       
-</div>
+      <ons-row class="emboss exp">
+        <ons-col>
+          {{ storage?.pfco?.startDate | date: "dd/MM/yy" }}
+        </ons-col>
+        <ons-col>
+          {{ storage?.pfco?.expDate | date: "dd/MM/yy" }}
+        </ons-col>
+      </ons-row>
+
+      <ons-row class="emboss name">
+        <ons-col>
+          {{ storage?.pfco?.name }}
+        </ons-col>
+      </ons-row>
+    </ons-card>
+
+    <!--Remote Pilot-->
+
+    <ons-card class="rpidStyle" *ngIf="storage?.rp.rpID">
+      <ons-row class="cardHead">
+        <ons-col>
+          Remote Pilot
+        </ons-col>
+      </ons-row>
+
+      <ons-row>
+        <ons-col>
+          <div class="emboss number">{{ storage?.rp?.rpID }}</div>
+        </ons-col>
+      </ons-row>
+      <ons-row class="small-type">
+        <ons-col>
+          Valid From
+        </ons-col>
+        <ons-col>
+          UNTIL END
+        </ons-col>
+      </ons-row>
+
+      <ons-row class="emboss exp">
+        <ons-col>
+          {{ storage?.rp?.startDate | date: "dd/MM/yy" }}
+        </ons-col>
+        <ons-col>
+          {{ storage?.rp?.expDate | date: "dd/MM/yy" }}
+        </ons-col>
+      </ons-row>
+
+      <ons-row class="emboss name">
+        <ons-col>
+          {{ storage?.rp?.name }}
+        </ons-col>
+      </ons-row>
+    </ons-card>
+  </div>
 </ons-page>

@@ -1,36 +1,52 @@
 <ons-page>
-<ons-list>
+  <ons-list>
     <ons-list-header>Settings</ons-list-header>
     <ons-list-item modifier="nodivider">
-        <div style="width: 100%; text-align: center;">
-        <ons-button (click)="pushPage()">Edit Details</ons-button>
-        </div>
+      <div style="width: 100%; text-align: center;">
+        <p>Modify your DroneDeck ID card details</p>
+        <ons-button (click)="pushPage()">DroneDeck Details</ons-button>
+      </div>
     </ons-list-item>
 
     <ons-list-header>Useful Links</ons-list-header>
-    <ons-list-item>
-        <div class="center">
-            Useful link?
-        </div>
+    <ons-list-item
+      modifier="longdivider"
+      tappable
+      onclick="window.open('https://register-drones.caa.co.uk/', '_system', 'location=yes'); return false;"
+    >
+      <div class="center">
+        CAA Drone Register
+      </div>
     </ons-list-item>
 
-    <ons-list-item>
-            <div class="center">
-                Useful link?
-            </div>
-        </ons-list-item>
+    <ons-list-item
+      modifier="longdivider"
+      tappable
+      onclick="window.open('https://dronesafe.uk/', '_system', 'location=yes'); return false;"
+    >
+      <div class="center">
+        Drone Safe
+      </div>
+    </ons-list-item>
 
-        <ons-list-item>
-                <div class="center">
-                    Useful link?
-                </div>
-            </ons-list-item>
+    <ons-list-item
+      modifier="longdivider"
+      tappable
+      onclick="window.open('https://notaminfo.com/ukmap', '_system', 'location=yes'); return false;"
+    >
+      <div class="center">
+        Check NOTAMS
+      </div>
+    </ons-list-item>
 
-            <ons-list-item>
-                    <div class="center">
-                        Useful link?
-                    </div>
-                </ons-list-item>
-</ons-list>
-
+    <ons-list-item
+      modifier="longdivider"
+      tappable
+      onclick="window.open('https://www.checkwx.com/', '_system', 'location=yes'); return false;"
+    >
+      <div class="center">
+        Check METAR/TAF
+      </div>
+    </ons-list-item>
+  </ons-list>
 </ons-page>

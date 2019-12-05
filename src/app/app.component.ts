@@ -1,31 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-import { MaincontentComponent } from './maincontent/maincontent.component';
-import { SettingspageComponent } from './settingspage/settingspage.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { Component, OnInit } from "@angular/core";
+import { MaincontentComponent } from "./maincontent/maincontent.component";
+import { SettingspageComponent } from "./settingspage/settingspage.component";
+import { WelcomeComponent } from "./welcome/welcome.component";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  title = 'DroneDeck';
-  
+  title = "DroneDeck";
 
   idPage = MaincontentComponent;
   settingsPage = SettingspageComponent;
   landingPage: any;
 
-
   ngOnInit() {
-
     if (localStorage.length > 0) {
       this.landingPage = MaincontentComponent;
-    }
-    else
-    {
+    } else {
       this.landingPage = WelcomeComponent;
     }
   }
-
 }

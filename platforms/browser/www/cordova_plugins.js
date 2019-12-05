@@ -1,20 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-device/www/device.js",
-        "id": "cordova-plugin-device.device",
-        "pluginId": "cordova-plugin-device",
-        "clobbers": [
-            "device"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
-        "id": "cordova-plugin-device.DeviceProxy",
-        "pluginId": "cordova-plugin-device",
-        "runs": true
-    },
-    {
         "file": "plugins/cordova-plugin-badge/www/badge.js",
         "id": "cordova-plugin-badge.Badge",
         "pluginId": "cordova-plugin-badge",
@@ -34,6 +20,20 @@ module.exports = [
         "file": "plugins/cordova-plugin-badge/src/browser/BadgeProxy.js",
         "id": "cordova-plugin-badge.Badge.Proxy",
         "pluginId": "cordova-plugin-badge",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-device/www/device.js",
+        "id": "cordova-plugin-device.device",
+        "pluginId": "cordova-plugin-device",
+        "clobbers": [
+            "device"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+        "id": "cordova-plugin-device.DeviceProxy",
+        "pluginId": "cordova-plugin-device",
         "runs": true
     },
     {
@@ -61,25 +61,16 @@ module.exports = [
             "cordova.plugins.notification.local.core",
             "plugin.notification.local.core"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-admobpro/www/AdMob.js",
-        "id": "cordova-plugin-admobpro.AdMob",
-        "pluginId": "cordova-plugin-admobpro",
-        "clobbers": [
-            "window.AdMob"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.3.4",
-    "cordova-plugin-device": "2.0.3",
     "cordova-plugin-badge": "0.8.8",
-    "cordova-plugin-local-notification": "0.9.0-beta.2",
+    "cordova-plugin-device": "2.0.3",
     "cordova-plugin-extension": "1.5.4",
-    "cordova-plugin-admobpro": "2.49.0"
+    "cordova-plugin-local-notification": "0.9.0-beta.2",
+    "cordova-plugin-whitelist": "1.3.4"
 }
 // BOTTOM OF METADATA
 });

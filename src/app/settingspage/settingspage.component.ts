@@ -1,24 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { AddinfoComponent } from '../addinfo/addinfo.component';
+import { Component, OnInit } from "@angular/core";
+import { AddinfoComponent } from "../addinfo/addinfo.component";
 
 @Component({
-  selector: 'ons-page[settingspage]',
-  templateUrl: './settingspage.component.html',
-  styleUrls: ['./settingspage.component.css']
+  selector: "ons-page[settingspage]",
+  templateUrl: "./settingspage.component.html",
+  styleUrls: ["./settingspage.component.css"]
 })
 export class SettingspageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-
-  pushPage(){
-    (document.getElementById('menu') as any).toggle();
-    setTimeout(function(){
-      (document.getElementById('mainNavi') as any).pushPage(AddinfoComponent, { animation: 'slide' });
-    }, 200);
-    
-    
+  pushPage() {
+    (document.getElementById("menu") as any).toggle();
+    setTimeout(function() {
+      (document.getElementById("mainNavi") as any).pushPage(AddinfoComponent, {
+        animation: "slide"
+      });
+    }, 100);
   }
 }
