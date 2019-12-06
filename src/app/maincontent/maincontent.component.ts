@@ -14,4 +14,5 @@ export class MaincontentComponent implements OnInit {
   onSettingsClick() {
     (document.getElementById("menu") as any).toggle();
   }
+
 }

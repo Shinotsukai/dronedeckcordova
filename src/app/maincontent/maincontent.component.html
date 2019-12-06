@@ -14,6 +14,9 @@
 
   <div class="content">
     <!--Operator Card-->
+    <ons-row style="justify-content: space-around;">
+    <ons-col width="360px">
+    
     <ons-card class="opidStyle" *ngIf="storage.operator.opID">
       <ons-row class="cardHead">
         <ons-col>
@@ -50,7 +53,8 @@
         </ons-col>
       </ons-row>
     </ons-card>
-
+</ons-col>
+<ons-col width="360px">
     <!--Flyer Card-->
 
     <ons-card class="flyidStyle" *ngIf="storage.flyer.flyID">
@@ -89,7 +93,8 @@
         </ons-col>
       </ons-row>
     </ons-card>
-
+</ons-col>
+<ons-col width="360px">
     <!--PFCO-->
 
     <ons-card class="pfcoidStyle" *ngIf="storage?.pfco.pfcoID">
@@ -128,7 +133,8 @@
         </ons-col>
       </ons-row>
     </ons-card>
-
+</ons-col>
+<ons-col width="360px">
     <!--Remote Pilot-->
 
     <ons-card class="rpidStyle" *ngIf="storage?.rp.rpID">
@@ -167,5 +173,8 @@
         </ons-col>
       </ons-row>
     </ons-card>
+
+    </ons-col>
+</ons-row>
   </div>
 </ons-page>

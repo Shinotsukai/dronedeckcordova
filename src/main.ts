@@ -13,12 +13,17 @@ if (environment.production) {
 let onDeviceReady = () => {
   platformBrowserDynamic().bootstrapModule(AppModule);
   
+  
+    cordova.plugins.notification.local.setDefaults({
+      led: { color: '#84acce', on: 500, off: 500 },
+      vibrate: true
+    }); 
+    
+  
+
 };
 document.addEventListener('deviceready', onDeviceReady, false);
 
-cordova.plugins.notification.local.setDefaults({
-  led: { color: '#FF00FF', on: 500, off: 500 },
-  vibrate: false
-});
+
 
 

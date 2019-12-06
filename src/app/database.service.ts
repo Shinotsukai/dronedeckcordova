@@ -24,42 +24,44 @@ export class DatabaseService {
       timeout: 2000
     });
 
+    cordova.plugins.notification.local.getTriggeredIds(function(ids) {
+      cordova.plugins.notification.local.clear(ids);
+    }, cordova.plugins);
+
     if (obj.sectionName === "Operator Section") {
       var time = obj.expDate;
-      time = time.replace("-", ",");
-
-      console.log(time);
+      time = time.replace(/-/g, ",");
 
       cordova.plugins.notification.local.schedule({
         id: 1,
         title: "Operator ID Expired",
         text:
           "Your Operator ID has now expired, Please visit the CAA website to renew",
-        trigger: { at: new Date(time) }
+        at: new Date(time)
       });
     } else if (obj.sectionName === "Flyer Section") {
       var time = obj.expDate;
-      time = time.replace("-", ",");
+      time = time.replace(/-/g, ",");
 
       cordova.plugins.notification.local.schedule({
         id: 2,
         title: "Flyer ID Expired",
         text:
-          "Your Flyer ID has now expired, Please visit the CAA website to renew"
+          "Your Flyer ID has now expired, Please visit the CAA website to renew",
+        at: new Date(time)
       });
     } else if (obj.sectionName === "PFCO Section") {
       var time = obj.expDate;
-      time = time.replace("-", ",");
+      time = time.replace(/-/g, ",");
 
       cordova.plugins.notification.local.schedule({
         id: 3,
         title: "PFCO Expired",
         text:
-          "Your PFCO has now expired. Please ensure your Operations Manual and logs are upto date and visit the CAA website to renew"
+          "Your PFCO has now expired. Please ensure your Operations Manual and logs are upto date and visit the CAA website to renew",
+        at: new Date(time)
       });
     }
-
-    console.log(obj.sectionName, obj.expDate);
   }
 
   checkDetailsStorage() {

@@ -12,6 +12,12 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.imagisoft.dronedeck"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.imagisoft.dronedeck"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.imagisoft.dronedeck"
     }
   },
   "dependent_plugins": {
